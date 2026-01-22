@@ -1,4 +1,4 @@
-package auth
+auth
 
 import (
 	"errors"
