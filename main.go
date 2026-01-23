@@ -18,9 +18,10 @@ import (
 )
 
 func unused() {
-    // this function does nothing
-    // and is called nowhere
+	// this function does nothing
+	// and is called nowhere
 }
+
 type apiConfig struct {
 	DB *database.Queries
 }
