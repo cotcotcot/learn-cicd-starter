@@ -41,9 +41,6 @@ jobs:
       - name: building docker image
         run: gcloud builds submit   --tag us-central1-docker.pkg.dev/bootdev-ci-cd/notely-ar-repo/notely:latest .  
 
-      - name: Debug DATABASE_URL
-        run: echo "DATABASE_URL is: $DATABASE_URL"
-
       - name: db migrations
         run: ./scripts/migrateup.sh
 
