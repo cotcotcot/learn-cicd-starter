@@ -89,10 +89,10 @@ func main() {
 	v1Router.Get("/healthz", handlerReadiness)
 
 	router.Mount("/v1", v1Router)
-	timeout, _ := time.ParseDuration("2s") 
+	timeout, _ := time.ParseDuration("2s")
 	srv := &http.Server{
-		Addr:    ":" + port,
-		Handler: router,
+		Addr:              ":" + port,
+		Handler:           router,
 		ReadHeaderTimeout: timeout,
 	}
 
